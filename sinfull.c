@@ -8,7 +8,7 @@ import threading
 import getpass
 import os
 
-sys.stdout.write("\x1b]2;S I N F U L L |SIN| D E M O N S\x07")
+sys.stdout.write("\x1b]2;A N G E L E N T E R N E L\x07")
 def modifications():
 	print ("Contact Misfortune or Reaper the script is currently under maitnance")
 	on_enter = input("Please press enter to leave")
@@ -95,7 +95,7 @@ banner = """\033[1;00m
   ░   ▒      ░   ░ ░ ░ ░   ░    ░     ░ ░   
       ░  ░         ░       ░    ░  ░    ░  ░
                                             
-                       \033[1;91m罪 深 い\033[00m
+                       \033[1;91ANGEL OWNS YOU\033[00m
 """
 
 altbanner = """
@@ -274,7 +274,7 @@ def main():
 			main()
 		elif sinput == "dnsresolve":
 			sfound = 0
-			sys.stdout.write("\x1b]2;S I N F U L L |{}| F O U N D\x07".format (sfound))
+			sys.stdout.write("\x1b]2;A N G E L |{}| F O U N D\x07".format (sfound))
 			try:
 				host = sin.split(" ")[1]
 				with open(r"/usr/share/sinfull/subnames.txt", "r") as sub:
