@@ -317,12 +317,12 @@ def main():
 						start = time.time() * 1000
 						sock.connect ((host, int(port)))
 						stop = int(time.time() * 1000 - start)
-						sys.stdout.write("\x1b]2;S I N F U L L |{}ms| D E M O N S\x07".format (stop))
+						sys.stdout.write("\x1b]2;A  N  G  E  L  S |{}ms| D E M O N S\x07".format (stop))
 						print ("Sinfull: {}:{} | Time: {}ms [\033[91mUP\033[00m]".format(ip, port, stop))
 						sock.close()
 						time.sleep(1)
 					except socket.error:
-						sys.stdout.write("\x1b]2;S I N F U L L |TIME OUT| D E M O N S\x07")
+						sys.stdout.write("\x1b]2;A  N  G  E  L  S |TIME OUT| D E M O N S\x07")
 						print ("Sinfull: {}:{} [\033[91mDOWN\033[00m]".format(ip, port))
 						time.sleep(1)
 					except KeyboardInterrupt:
@@ -403,14 +403,14 @@ def main():
 				udp = False
 				while not udp:
 					if aid == 0:
-						print ("[\033[91mSIN\033[00m] No udp Processes running.")
+						print ("[\033[91mANGLE\033[00m] No udp Processes running.")
 						udp = True
 						main()
 			if what == "icmp":
 				print ("Stopping all icmp attacks")
 				icmp = False
 				while not icmp:
-					print ("[\033[91mSIN\033[00m] No ICMP processes running")
+					print ("[\033[91mSANGLE\033[00m] No ICMP processes running")
 					udp = True
 					main()
 		else:
